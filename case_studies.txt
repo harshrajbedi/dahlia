@@ -1,1 +1,40 @@
 Case Studies
+
+Session layer attacks case studies-
+
+1. Yahoo! Session Hijacking Attack:
+Vulnerability Exploited: The vulnerability was found in Yahoo's session management and authentication mechanism, specifically in the way session cookies were handled.
+
+How it was Exploited: The attacker exploited the vulnerability by intercepting user session cookies. Session cookies are used to authenticate and maintain user sessions. In this case, the attacker was able to capture these session cookies due to weaknesses in Yahoo's website, possibly through techniques like packet sniffing or man-in-the-middle attacks.
+
+Impact:
+ The impact of the session hijacking attack on Yahoo accounts was significant. It allowed the attacker to gain unauthorized access to user accounts, potentially compromising personal and sensitive information stored within those accounts.
+ The consequences of the attack included:
+•	Unauthorized Access: By hijacking user sessions, the attacker gained access to private emails, contacts, attachments, and other account-related information.
+
+•	Privacy Breach: Personal information, such as names, addresses, phone numbers, and potentially sensitive email content, could have been exposed.
+
+•	Account Manipulation: The attacker could perform actions on behalf of the users, such as sending malicious emails, altering account settings, or initiating unauthorized transactions.
+
+•	Trust and Reputation: The incident may have damaged Yahoo's reputation and eroded user trust, especially if personal or sensitive information was misused or leaked.
+
+Countermeasures: Following the attack, Yahoo implemented stronger encryption for session cookies, improved their session management practices, and increased user awareness about secure browsing habits. These countermeasures aimed to mitigate the vulnerability and protect user sessions from being hijacked.
+
+
+
+2. LinkedIn Session Replay Attack:
+Vulnerability Exploited: The vulnerability was related to LinkedIn's inadequate protection against session replay attacks, where user interactions were recorded and replayed without proper safeguards. 
+
+How it was Exploited: Attackers were able to exploit the vulnerability by injecting malicious JavaScript code into the user's browser. This code recorded the user's interactions and sent them to an attacker-controlled server.
+
+Impact: 
+The session replay attack on LinkedIn had implications for user privacy and the security of sensitive information shared on the platform.
+ The consequences of the attack included:
+•	Unauthorized Access to Accounts: The attacker gained access to user accounts, potentially exposing personal and professional information stored on LinkedIn profiles.
+
+•	Exposure of Confidential Business Data: For users engaged in professional networking or business activities, confidential information shared through private messages, connections, or group discussions could have been compromised.
+•	Credential Theft: If the attacker successfully captured login credentials during the session replay, it could lead to further unauthorized access to other online accounts linked to the same credentials.
+
+•	Reputational Damage: The incident may have negatively impacted LinkedIn's reputation as a trusted professional networking platform, raising concerns about the security of user data.
+
+Countermeasures: LinkedIn took prompt action upon being informed about the vulnerability. They implemented enhanced security measures, which could include the use of anti-replay mechanisms, improving session management, and strengthening the overall security of their website. These measures aimed to mitigate the vulnerability and prevent session replay attacks from occurring.
