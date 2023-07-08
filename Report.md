@@ -28,7 +28,6 @@ Session layer cyberattacks refer to the malicious activities that target the ses
 Attacks at this layer aim to exploit vulnerabilities in session management protocols, session 
 establishment procedures, or session maintenance mechanisms.
 Here are some common types of session layer cyberattacks:
-
 1. Session Hijacking: This attack involves an unauthorized individual gaining control over a 
 legitimate user's session by intercepting or stealing session identifiers or tokens. The 
 attacker can then impersonate the user and perform actions on their behalf.
