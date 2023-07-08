@@ -1,4 +1,4 @@
-# This report is about how attacks at different layers could compromise network security and affect the overall system.
+# This report is about how attacks at different OSI layers could compromise network security and affect the overall system.
 ## Application Layer
 ### What is the Application Layer 
 The Application layer of the OSI model is responsible for providing services to end-user applications, such as email, web browsing, file transfer, and remote access. 
