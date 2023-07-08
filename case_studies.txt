@@ -33,6 +33,23 @@ Here are two real-world case studies of attacks on the application layer of the 
   Conclusion:
     These case studies demonstrate the significance of securing applications at the application layer and implementing measures to prevent and mitigate attacks. Organizations should focus on regular security assessments, secure coding practices, patch management, email security, network segmentation, and user education to strengthen their defense against application layer attacks.
 
+CASE STUDIES
+Presentation layer
+
+1.  Facebook and Google
+IMPACT AND CONSEQUENCES:
+Between 2013 and 2015, Facebook and Google were tricked out of $100 million due to an extended phishing campaign. The phisher took advantage of the fact that both companies used Quanta, a Taiwan-based company, as a vendor. The attacker sent a series of fake invoices to the company that impersonated Quanta, which both Facebook and Google paid.
+
+COUNTERMEASURES:
+Eventually, the scam was discovered, and Facebook and Google took action through the US legal system. The attacker was arrested and extradited from Lithuania, and, as a result of the legal proceedings, Facebook and Google were able to recover $49.7 million of the $100 million stolen from them.
+
+
+2. Ubiquiti Networks
+IMPACT AND CONSEQUENCES:
+In 2015, Ubiquiti Networks, a computer networking company based in the US, was the victim of a BEC attack that cost the company $46.7 million (of which they expected to recover at least $15 million). The attacker impersonated the company’s CEO and lawyer and instructed the company’s Chief Accounting Officer to make a series of transfers to close a secret acquisition. Over the course of 17 days, the company made 14 wire transfers to accounts in Russia, Hungary, China, and Poland.
+
+COUNTERMEASURES:
+The incident only came to Ubiquiti’s attention when it was notified by the FBI that the company’s Hong Kong bank account may have been the victim of fraud. This enabled the company to stop any future transfers and attempt to recover as much of the $46.7 million stolen as possible (which represented roughly 10% of the company’s cash position).
 
 Network Layer : 
 
