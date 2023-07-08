@@ -114,3 +114,40 @@ Regular training and awareness programs can familiarize employees with the risks
 Maintenance and updates can identify and resolve vulnerabilities and keep your systems up to date with the latest security patches.
 >>Encryption and Authentication
 Strong encryption and authentication measures can protect data from unauthorized access and manipulation.
+
+Muhammad Suleman
+
+Title: Transport Layer in the OSI Model and Common Attacks
+
+Introduction:
+The Transport Layer is the fourth layer in the OSI (Open Systems Interconnection) model, responsible for reliable end-to-end communication between devices across a network. This layer ensures the delivery of data packets and provides error recovery, flow control, and congestion control mechanisms.
+
+Key Points:
+1. Transport Layer Overview:
+   - The Transport Layer establishes and manages connections between devices, ensuring reliable data delivery.
+   - It segments and reassembles data into manageable units for transmission and handles end-to-end flow control.
+   - The primary protocols at this layer include TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).
+
+2. Attacks on the Transport Layer:
+   - SYN Flood Attacks:
+     - Overwhelm target servers by sending a high volume of SYN (synchronization) packets, exhausting resources and causing denial of service.
+   - TCP/IP Hijacking:
+     - Intercept and manipulate TCP connections to gain unauthorized access or disrupt communications.
+   - UDP Flooding:
+     - Flood target systems with a large number of UDP (User Datagram Protocol) packets, consuming resources and causing denial of service.
+   - TCP Session Hijacking:
+     - Exploit vulnerabilities in TCP sessions to take control of ongoing connections, allowing unauthorized access or data manipulation.
+   - TCP Reset Attacks:
+     - Spoof TCP RST (reset) packets to terminate existing connections, disrupting communication and potentially causing service interruptions.
+   - Port Scanning and Enumeration:
+     - Systematic scanning of ports to identify open services, potentially leading to further attacks and exploitation.
+
+3. Impact of Transport Layer Attacks:
+   - Downtime: Transport layer attacks can lead to prolonged service disruptions, affecting business operations and user experience.
+   - Financial Losses: Attacks resulting in service outages can result in revenue loss for organizations, particularly for e-commerce platforms.
+   - Data Integrity: Manipulation of TCP connections or hijacked sessions can compromise the integrity and confidentiality of transmitted data.
+   - Reputational Damage: Successful attacks on the transport layer can erode customer trust and damage the organization's reputation.
+   - Regulatory Compliance: Security breaches resulting from transport layer attacks may lead to non-compliance with industry regulations and data protection laws.
+
+Conclusion:
+The Transport Layer plays a critical role in ensuring reliable and secure communication between network devices. Attacks targeting this layer can disrupt services, compromise data integrity, and have significant financial and reputational implications for organizations. By understanding the common attacks on the transport layer and implementing appropriate countermeasures, organizations can enhance their network security and protect against these threats.
