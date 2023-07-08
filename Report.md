@@ -114,7 +114,7 @@ Regular training and awareness programs can familiarize employees with the risks
 Maintenance and updates can identify and resolve vulnerabilities and keep your systems up to date with the latest security patches.
 >>Encryption and Authentication
 Strong encryption and authentication measures can protect data from unauthorized access and manipulation.
->>Pavan &suleman
+>>Pavan Kalyan
 OSI MODEL
 Overview:
 The open systems interconnection (OSI) model is a conceptual model created by
@@ -188,30 +188,6 @@ address. This is known as spoofing.
 « This process, known as ICMP echoes, creates an infinite loop that overwhelms a network
 with constant requests.
 Prevent Smurf Attack:
-Case study 2
-Transport Layer in the OSI Model:
-Introduction:
-The Open Systems Interconnection (OSI) model is a conceptual framework used to understand
-and describe the functions of a computer network. The Transport Layer, which resides in the
-middle of the OSI model, plays a crucial role in facilitating reliable and efficient communication
-between network hosts. This case study aims to explore the key features, protocols, and
-challenges associated with the Transport Layer.
-Key Features:
-The Transport Layer is responsible for end-to-end communication services and ensures the
-reliable and orderly delivery of data packets across a network. It provides the following key
-features:
-1. Segmentation and Reassembly: The Transport Layer divides large data streams into
-smaller, manageable units called segments, ensuring efficient transmission and reassembling of
-the segments at the receiving end.
-2. Connection-oriented and Connectionless Services: The Transport Layer offers
-both connection-oriented (TCP) and connectionless (UDP) services. TCP establishes a reliable,
-error-checked connection before data transfer, while UDP delivers data without establishing a
-connection, making it faster but less reliable.
-3. Flow Control: To prevent overwhelming the receiving host, flow control manages the rate
-at which data is transmitted, ensuring the receiver can handle the incoming data.
-4. Error Control: The Transport Layer employs error detection and correction mechanisms
-to ensure data integrity. TCP uses acknowledgments and retransmissions to guarantee reliable
-delivery, while UDP does not provide error control.
 Protocols:
 Two widely used protocols associated with the Transport Layer are Transmission Control
 Protocol (TCP) and User Datagram Protocol (UDP).
@@ -222,20 +198,6 @@ reliability mechanisms.
 2. UDP: UDP is a lightweight, connectionless protocol that offers faster data transmission but
 does not provide reliability features. It is commonly used for real-time applications like video
 streaming, VoIP, and online gaming, where speed is prioritized over data integrity.
-Challenges:
-The Transport Layer faces several challenges in ensuring efficient and reliable communication:
-1. Congestion Control: As networks become increasingly congested, managing and
-controlling
-network traffic to prevent congestion and ensure fair resource allocation becomes crucial. TCP
-implements congestion control mechanisms, such as congestion window adjustment and slow
-start, to alleviate network congestion.
-2. Security: The Transport Layer must address security concerns, including data
-confidentiality, integrity, and authentication. Encryption techniques like Transport Layer
-Security (TLS) and Secure Sockets Layer (SSL) provide secure communication channels over
-the network.
-3. Quality of Service (QoS): The Transport Layer strives to meet the QoS requirements of
-different applications, including bandwidth, latency, and jitter. QoS mechanisms prioritize
-critical data traffic and allocate network resources accordingly.
 Conclusion:
 The Transport Layer in the OSI model is a vital component of modern computer networks. It
 offers segmentation, reassembly, flow control, and error control services to ensure reliable data
@@ -246,3 +208,10 @@ References:
 1. IIT Khargapur
 2. Fortinet
 3. Tech target
+
+
+
+
+
+
+
