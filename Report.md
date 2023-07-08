@@ -21,3 +21,31 @@ The impact of these attacks on the overall system can be severe and wide-ranging
 - Legal and Compliance Issues: Organizations may face legal consequences if sensitive customer data is compromised, violating data protection regulations or industry standards.
 
 To mitigate attacks at the network layer and enhance network security, organizations can implement various countermeasures such as implementing strong access controls, deploying network intrusion detection/prevention systems (IDS/IPS), utilizing encryption protocols, applying traffic filtering and rate limiting techniques, implementing secure routing protocols, and regularly updating and patching network devices and software.
+
+
+session layer 
+Session layer cyberattacks refer to the malicious activities that target the session layer (Layer 5) of the OSI (Open Systems Interconnection) model. The session layer is responsible for establishing, managing, and terminating communication sessions between network entities. 
+Attacks at this layer aim to exploit vulnerabilities in session management protocols, session 
+establishment procedures, or session maintenance mechanisms.
+Here are some common types of session layer cyberattacks:
+
+1. Session Hijacking: This attack involves an unauthorized individual gaining control over a 
+legitimate user's session by intercepting or stealing session identifiers or tokens. The 
+attacker can then impersonate the user and perform actions on their behalf.
+2. Session Replay: In a session replay attack, the attacker captures and replays a previously 
+recorded session to repeat the actions taken by the original user. This can enable the 
+attacker to carry out unauthorized activities or access sensitive information.
+3. Session Denial-of-Service (DoS): Session DoS attacks aim to disrupt the normal 
+functioning of session establishment and maintenance processes. Attackers overload 
+the targeted system with excessive session requests or maliciously terminate legitimate 
+sessions, rendering the service unavailable to users.
+4. Session Reset: This attack involves an attacker injecting fraudulent session reset packets 
+into a communication stream, causing the legitimate session to terminate. It disrupts 
+ongoing communication between network entities and can lead to service disruption or 
+data loss.
+5. Session Sidejacking: Also known as session eavesdropping, this attack occurs when an 
+attacker intercepts and steals session cookies or tokens transmitted over an insecure 
+network. The attacker can use the stolen credentials to hijack the session and gain 
+unauthorized access.
+6. Man-in-the-Middle (MitM): MitM attacks occur when an attacker intercepts and alters communication between two entities, acting as an intermediary without their knowledge. This allows the attacker to manipulate the session establishment process, 
+capture sensitive information, or inject malicious content into the session.
