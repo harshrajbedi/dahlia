@@ -1,6 +1,16 @@
-sharukh
+Presentation layer | 6
+The presentation layer, also known as the “syntax layer”, is responsible for formatting and translating data into the format the application layer specifies. It is to say, it acts as the network’s data translator to ensure that the data sent out by the application layer is readable by the receiving system’s application layer.
+
+This OSI model layer communicates and interacts with: the application layer and the session layer.
+
+The most common security attack on the presentation layer is: a phishing attack. 
+
+Phishing attacks are the practice of sending fraudulent messages that appear to come from a trusted source. It is usually performed through email. The goal is to steal sensitive data like credit card and login information or install malware on the victim’s machine. Phishing is a common type of cyber-attack that everyone should learn about in order to protect themselves.
+
+Attack vectors: SSL hijacking, encryption downgrade attacks, decryption attacks, encoding attacks, DDoS attacks
 
 
+Mitigation: offload the SSL from the origin infrastructure and inspecting the application traffic for signs of attack traffic or violations of policy at an applications delivery platform (ADP). A good ADP will also ensure that your traffic is then re-encrypted and forwarded back to the origin infrastructure.
 
 
 How attacks at Network layer can compromise network security and affect the overall system.
