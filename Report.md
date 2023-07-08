@@ -1,20 +1,36 @@
 Application Layer:
+
   Definition:
-      The application layer of the OSI model is responsible for providing services to end-user applications, such as email, web browsing, file transfer, and remote access. Attacks at the application layer can compromise network security and affect the overall system in several ways:
+  
+The application layer of the OSI model is responsible for providing services to end-user applications, such as email, web browsing, file transfer, and remote access. Attacks at the application layer can compromise network security and affect the overall system in several ways:
+
   1: Malware and Viruses:
-    Attackers can exploit vulnerabilities in applications to introduce malware and viruses into the system. These malicious programs can spread throughout the network, causing damage to data and systems, and compromising overall security.
+  
+Attackers can exploit vulnerabilities in applications to introduce malware and viruses into the system. These malicious programs can spread throughout the network, causing damage to data and systems, and compromising overall security.
+
   2: Denial-of-Service (DoS) Attacks:
-    Attackers can target specific applications by flooding them with an overwhelming amount of traffic, rendering them unavailable to legitimate users. This can disrupt business operations and impact the overall availability and performance of the network.
+  
+Attackers can target specific applications by flooding them with an overwhelming amount of traffic, rendering them unavailable to legitimate users. This can disrupt business operations and impact the overall availability and performance of the network.
+  
   3: Cross-Site Scripting (XSS):
-    XSS attacks occur when an attacker injects malicious code into a trusted website or application, which then executes on the user's browser. This can lead to the theft of sensitive information, session hijacking, or even control over user accounts.
+  
+XSS attacks occur when an attacker injects malicious code into a trusted website or application, which then executes on the user's browser. This can lead to the theft of sensitive information, session hijacking, or even control over user accounts.
+  
   4: SQL Injection:
-    In an SQL injection attack, an attacker exploits vulnerabilities in an application's database query mechanism. By injecting malicious SQL statements, the attacker can manipulate the database, gain unauthorized access to sensitive data, modify or delete data, or execute arbitrary commands on the underlying system.
+  
+In an SQL injection attack, an attacker exploits vulnerabilities in an application's database query mechanism. By injecting malicious SQL statements, the attacker can manipulate the database, gain unauthorized access to sensitive data, modify or delete data, or execute arbitrary commands on the underlying system.
+  
   5: Phishing and Social Engineering: 
-    Attackers often use deceptive techniques to trick users into divulging sensitive information like passwords or credit card details. These attacks usually occur via email, instant messaging, or fraudulent websites, and can compromise user accounts, leading to unauthorized access to the network.
+  
+Attackers often use deceptive techniques to trick users into divulging sensitive information like passwords or credit card details. These attacks usually occur via email, instant messaging, or fraudulent websites, and can compromise user accounts, leading to unauthorized access to the network.
+  
   6: Man-in-the-Middle (MitM) Attacks:
-    In a MitM attack, an attacker intercepts communication between two parties and can eavesdrop, modify, or inject malicious content into the communication stream. This can compromise the confidentiality, integrity, and authenticity of the transmitted data and can affect overall system security.
+  
+In a MitM attack, an attacker intercepts communication between two parties and can eavesdrop, modify, or inject malicious content into the communication stream. This can compromise the confidentiality, integrity, and authenticity of the transmitted data and can affect overall system security.
+  
   7: Session Hijacking:
-    Attackers can exploit vulnerabilities in session management mechanisms to hijack user sessions. By taking control of an active session, attackers can impersonate legitimate users, gain unauthorized access to sensitive information, or perform malicious actions on behalf of the hijacked user
+  
+Attackers can exploit vulnerabilities in session management mechanisms to hijack user sessions. By taking control of an active session, attackers can impersonate legitimate users, gain unauthorized access to sensitive information, or perform malicious actions on behalf of the hijacked user
 
 How attacks at Network layer can compromise network security and affect the overall system.
 
