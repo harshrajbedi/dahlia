@@ -36,6 +36,44 @@ Mitigating attacks on the application layer of the OSI model necessitates the im
 
 > Attacks on the application layer can have severe consequences and compromise network security in various ways. For instance, SQL injection attacks can lead to unauthorized access to databases, enabling attackers to retrieve or manipulate sensitive information. Cross-Site Scripting (XSS) attacks can allow malicious scripts to be executed within users' browsers, leading to session hijacking, data theft, or website defacement. By exploiting vulnerabilities in web applications, attackers can gain remote code execution capabilities, granting them unauthorized access to the underlying systems and potentially compromising the entire network. Distributed Denial of Service (DDoS) attacks targeting the application layer can overwhelm servers, rendering applications and services inaccessible to legitimate users, causing significant disruption. Moreover, successful attacks such as session hijacking, man-in-the-middle attacks, or clickjacking can bypass authentication mechanisms, compromise user credentials, and enable further unauthorized access to network resources. These examples illustrate how attacks on the application layer can undermine network security, highlighting the importance of implementing robust security measures and conducting regular vulnerability assessments to protect against such threats.
 
+## Presentation Layer
+### What is Presentation Layer 
+The presentation layer, also known as the “syntax layer”, is responsible for formatting and translating data into the format the application layer specifies. It is to say, it acts as the network’s data translator to ensure that the data sent out by the application layer is readable by the receiving system’s application layer. This OSI model layer communicates and interacts with: the application layer and the session layer. Presentation Layer attacks, like encryption attacks or manipulating data formats, can undermine the confidentiality and integrity of data. Successful encryption attacks can expose sensitive information, and manipulating data formats can lead to data corruption, unauthorized access, or execution of malicious code.
+
+
+Attacks at the Presentation layer can compromise network security and affect the overall system in several ways - 
+
+<details>
+           <summary>Code Injection</summary>
+           <p>Attackers attempt to inject malicious code into data streams or input fields that are processed by the presentation layer. This code can exploit vulnerabilities in the data formatting or rendering process, leading to unauthorized execution of arbitrary code.</p>
+</details>
+
+<details>
+           <summary>Content Spoofing</summary>
+           <p>In this type of attack, the attacker manipulates the presentation of data to deceive users. For example, an attacker may forge a website or application to make it appear legitimate and trick users into providing sensitive information.</p>
+</details>
+
+<details>
+           <summary>Format String Attacks</summary>
+           <p>These attacks target vulnerabilities in how applications handle format strings, which are placeholders used for formatting data. By manipulating the format string, an attacker can read or write arbitrary memory, leading to unauthorized data access or code execution.</p>
+         </details>
+  
+<details>
+           <summary>Brute Force Attacks</summary>
+           <p>Attackers may attempt to guess or crack encryption keys or passwords used for data encryption or decryption in the presentation layer. By systematically trying various combinations, they aim to gain unauthorized access to sensitive data.</p>
+         </details>
+
+<details>
+           <summary>Data Injection</summary>
+           <p>Attackers can attempt to inject malicious or unexpected data into the presentation layer. This can lead to data corruption, unauthorized access, or exploitation of vulnerabilities in the processing or rendering of the injected data.</p>
+         </details>
+
+#### Mitigation Strategies
+
+Mitigating attacks on the presentation layer of the OSI model requires the implementation of various security measures to protect the formatting, encoding, and presentation of data. One essential strategy is to **employ robust input validation and sanitization mechanisms** to ensure that data received at the presentation layer is properly validated and cleansed. This helps prevent code injection and other types of malicious input that can exploit vulnerabilities in data processing or rendering processes. Additionally, **applying proper output encoding techniques** is crucial to mitigate the risk of cross-site scripting (XSS) attacks. By encoding special characters and user-generated content, the risk of injecting malicious scripts into the presentation layer can be significantly reduced. **Implementing encryption and secure communication protocols**, such as TLS (Transport Layer Security), helps protect the confidentiality and integrity of data transmitted at the presentation layer.
+
+> Attacks on the presentation layer can pose significant risks to network security, potentially compromising the confidentiality, integrity, and availability of data and services. For instance, code injection attacks targeting the presentation layer can exploit vulnerabilities in data formatting and rendering processes, leading to the execution of malicious code within applications. This can result in unauthorized access, data manipulation, or the compromise of sensitive information. Cross-Site Scripting (XSS) attacks at the presentation layer can allow attackers to inject and execute malicious scripts in users' browsers, enabling them to steal user credentials, initiate session hijacking, or perform other unauthorized actions. Additionally, denial-of-service (DoS) attacks on the presentation layer can overload and disrupt the processing and rendering of data, leading to application downtime and service unavailability. By compromising the presentation layer, attackers can undermine the overall security of the network and its applications, emphasizing the need for robust security measures such as input validation, secure coding practices, and regular security assessments to detect and mitigate vulnerabilities in this layer
+
 ## Session Layer
 ### What is Session Layer 
 The session layer is the fifth layer of the OSI (Open Systems Interconnection) model. Its primary function is to establish, manage, and terminate communication sessions between two network devices. The session layer ensures reliable and orderly data exchange by providing mechanisms for session establishment, maintenance, synchronization, and recovery in case of failures.
