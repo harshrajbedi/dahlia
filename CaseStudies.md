@@ -24,30 +24,24 @@ Here are some key details of the attack:
 The attack timeline of Stuxnet provides a chronological sequence of events from its initial infection to its impact and discovery. Here is a general timeline of the Stuxnet attack:
 
 **2008-2009:**
-
 Stuxnet's development is believed to have started during this period, with the involvement of sophisticated state-sponsored actors.
-**2009:**
 
+**2009:**
 Stuxnet begins infecting systems, primarily through infected USB drives distributed within targeted networks or facilities.
 The malware spreads within networks using various propagation methods, including exploiting network shares and zero-day vulnerabilities.
-**2010:**
 
+**2010:**
 The first significant impact of Stuxnet is felt as it infiltrates multiple industrial control systems worldwide, particularly targeting Siemens' SCADA systems.
 Stuxnet's primary target is believed to be Iran's nuclear program, specifically the uranium enrichment facilities at the Natanz site.
 The malware specifically targets Siemens' Step7 software and manipulates the programmable logic controllers (PLCs) controlling centrifuge operations.
 Stuxnet employs advanced techniques, such as rootkit functionality and code injection, to remain undetected and persist on infected systems.
 The highly targeted nature of the attack and the precision of the PLC manipulation set Stuxnet apart as a sophisticated and purpose-built cyber weapon.
+
 **June 2010:**
-
 Stuxnet is discovered independently by security researchers at various cybersecurity firms, including Symantec and Kaspersky Lab. The discovery sparks intense interest and analysis within the cybersecurity community.
+
 **July 2010:**
-
 Stuxnet's complexity and targeted nature become more widely known, raising significant concerns about its potential implications for critical infrastructure security and international relations.
-Post-Discovery:
-
-Intensive analysis of Stuxnet is conducted by cybersecurity researchers, leading to a deeper understanding of its capabilities and its specific targeting of industrial control systems.
-The source code and technical details of Stuxnet are publicly shared, enabling further research and insights into its design and operation.
-The discovery of Stuxnet triggers international discussions on cyber warfare, the ethics of nation-state cyber attacks, and the protection of critical infrastructure.
 
 ### Impact and Consequences
 
