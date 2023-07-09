@@ -141,5 +141,54 @@ Attacks at the Transport layer can compromise network security and affect the ov
 <details>
            <summary>Transport Layer Security (TLS)/Secure Sockets Layer (SSL) Attacks</summary>
            <p>These attacks exploit vulnerabilities in the TLS/SSL protocols used for secure communication. Examples include protocol downgrade attacks, where attackers force the use of weaker encryption protocols or cryptographic vulnerabilities, or exploiting implementation flaws in SSL/TLS libraries.</p>
-         </details>
+         </details>This layer establishes a point-to-point connection between the source and the destination, ensuring that the data is transmitted in the correct order. It also performs flow control, error control, data reassembly, and segmentation. Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) are examples of transport layer protocols.
+Attacks in this layer are often conducted through vulnerable open ports identified by port scanning.
+SYN flood attack :
+                                      This is a type of DDoS attack that exploits the TCP three-way handshake. The attacker sends multiple synchronization (SYN) packets to every port of a server. The server acknowledges by sending a Synchronize-Acknowledge (SYN-ACK) message for each SYN packet. If the malicious client doesn’t send the final ACK packet as expected, it creates “half-open” sessions on the server. As the server’s ability to process requests becomes depleted, new requests and services to legitimate clients will be denied. If the SYN flood continues, the server will malfunction or crash. SYN flood attacks can be mitigated by allocating micro-blocks, as few as 16 bytes for a SYN request, and maintaining SYN cookies and RST cookies.
+
+
+                              
+
+
+Working Of SYN flood attack:
+                                                      
+SYN flood attacks work by exploiting the handshake process of a TCP connection. Under normal conditions, TCP connection exhibits three distinct processes in order to make a connection.
+First, the client sends a SYN packet to the server in order to initiate the connection.
+The server then responds to that initial packet with a SYN/ACK packet, in order to acknowledge the communication.
+Finally, the client returns an ACK packet to acknowledge the receipt of the packet from the server. After completing this sequence of packet sending and receiving, the TCP connection is open and able to send and receive data.
+
+To create denial-of-service, an attacker exploits the fact that after an initial SYN packet has been received, the server will respond back with one or more SYN/ACK packets and wait for the final step in the handshake. 
+
+Here’s how it works:
+The attacker sends a high volume of SYN packets to the targeted server, often with spoofed IP addresses.
+The server then responds to each one of the connection requests and leaves an open port ready to receive the response.
+While the server waits for the final ACK packet, which never arrives, the attacker continues to send more SYN packets. The arrival of each new SYN packet causes the server to temporarily maintain a new open port connection for a certain length of time, and once all the available ports have been utilized the server is unable to function normally.
+
+
+
+Smurf attack :
+                                  Named after a popular toy figure from the 1980s that appeared to be everywhere, the Smurf attack is also a type of a DDoS attack. This attack is carried out by generating fake ICMP Echo request (PING) packets to an IP broadcast network using the targeted server`s IP address as the source IP address. With so many ICMP responses, seeming to come from everywhere, the target server becomes overwhelmed and is bought down. Inspection of incoming, traffic and blocking illegal ICMP responses will limit the chances of a Smurf attack.
+
+Internet Control Message Protocol (ICMP) is a form of DDoS attack that overloads network resources by broadcasting ICMP echo requests to devices across the network. Devices that receive the request respond with echo replies, which creates a botnet situation that generates a high ICMP traffic rate. 
+                                  As a result, the server is flooded with data requests and ICMP packets, which overwhelm the computer network and make it inoperable. This can be particularly problematic for distributed computing systems, which allow devices to act as computing environments and enable users to access resources remotely.
+
+A smurf attack works through the following three-step process:
+The DDoS Smurf malware creates a network data packet that attaches to a false IP address. This is known as spoofing.
+The packet contains an ICMP ping message, which commands network nodes to send a reply.
+
+This process, known as ICMP echoes, creates an infinite loop that overwhelms a network with constant requests.
+
+Prevent Smurf Attack:
+                                         A Smurf Attack implies 3 players: the hacker, the intermediary / the amplifier, the victim. In order for the attack to start, the intermediary has to let a source-spoofed IP packet leave its network. Therefore, prevention has to be done on two levels: you must avoid being attacked and you must avoid being used to launch an attack. 
+To avoid being the amplifier, you should disable IP-directed broadcast on the router – this will make it deny the broadcast traffic to the internal network from other networks. You can also try to apply an outbound filter to your perimeter router, as well as configuring hosts and routers not to respond to ICMP echo requests. 
+To avoid being the victim, you should:
+
+                                                               have a prevention strategy based on traffic network monitoring that can detect any oddments – like packet volume, behaviour and signature. This could help you stop a Smurf Attack before it even begins. 
+– install an antivirus and an anti-malware solution and protect your servers with network firewalls or specialized web application firewalls. You could try for that matter Gen Endpoint Antivirus. Its firewall can help you prevent incoming attacks, while the AV uses 4 stages of scanning (Local File/Signature & Registry Scanning; Real-time Cloud Scanning; Sandbox and Backdoor Inspection; Process Behaviour-based Scanning) to detect and identify even the most advanced threats. Our solution’s firewall also offers full management of the windows firewall and device Isolation in case of major outbreaks, enabling IT to lockdown departments quickly, according to the NIST AC-7 Policy regarding Authentication Failures. 
+
+#### Mitigation Strategies
+
+Mitigating attacks on the transport layer of the OSI model requires implementing various security measures to protect the reliable transmission of data between network hosts. One key strategy is to *implement secure transport protocols* such as Transport Layer Security (TLS) or Secure Socket Layer (SSL). These protocols encrypt data during transmission, ensuring confidentiality and integrity, and protect against attacks that aim to intercept or tamper with data in transit. It is crucial to keep the transport layer protocols and their implementations up to date with the latest security patches to address known vulnerabilities. *Implementing proper network segmentation and access controls* helps prevent unauthorized access to network resources and protects against attacks that target the transport layer. Intrusion detection and prevention systems (IDPS) can monitor network traffic, detect suspicious activities, and block potential attacks at the transport layer. Additionally, *implementing strong authentication mechanisms and access controls* helps ensure that only authorized hosts can establish connections and access network resources.
+
+> Attacks on the transport layer can have severe implications for network security, compromising the confidentiality, integrity, and availability of data and services. For example, TCP SYN flooding attacks can overwhelm a system's resources, leading to denial-of-service (DoS) conditions and rendering services inaccessible to legitimate users. Session hijacking attacks targeting the transport layer can enable unauthorized access, data tampering, or the impersonation of legitimate communication parties, potentially leading to unauthorized disclosure of sensitive information or unauthorized actions. Manipulating or disrupting transport layer protocols, such as TCP or UDP, can result in the disruption of network communication, loss of data, or the injection of malicious payloads into network streams.
         
