@@ -98,7 +98,7 @@ Attacks at the Session layer can compromise network security and affect the over
   
 <details>
            <summary>Resource Exhaustion</summary>
-           <p>Attackers may attempt to exhaust session-related resources, such as session identifiers or connection state tables, leading to service degradation or denial of service.</p>
+           <p>Also known as a session layer DoS (Denial-of-Service) attack which targets the session layer (Layer 5) of the OSI model with the intention of overwhelming or depleting the resources necessary for session establishment and maintenance. This type of attack aims to disrupt the normal functioning of session-related processes, rendering the targeted system or service unavailable to legitimate users. </p>
          </details>
 
 <details>
