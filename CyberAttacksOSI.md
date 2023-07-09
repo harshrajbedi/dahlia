@@ -36,6 +36,22 @@ Mitigating attacks on the application layer of the OSI model necessitates the im
 
 > Attacks on the application layer can have severe consequences and compromise network security in various ways. For instance, SQL injection attacks can lead to unauthorized access to databases, enabling attackers to retrieve or manipulate sensitive information. Cross-Site Scripting (XSS) attacks can allow malicious scripts to be executed within users' browsers, leading to session hijacking, data theft, or website defacement. By exploiting vulnerabilities in web applications, attackers can gain remote code execution capabilities, granting them unauthorized access to the underlying systems and potentially compromising the entire network. Distributed Denial of Service (DDoS) attacks targeting the application layer can overwhelm servers, rendering applications and services inaccessible to legitimate users, causing significant disruption. Moreover, successful attacks such as session hijacking, man-in-the-middle attacks, or clickjacking can bypass authentication mechanisms, compromise user credentials, and enable further unauthorized access to network resources. These examples illustrate how attacks on the application layer can undermine network security, highlighting the importance of implementing robust security measures and conducting regular vulnerability assessments to protect against such threats.
 
+## Presentation layer 
+### What is Presentation Layer
+The presentation layer, also known as the “syntax layer”, is responsible for formatting and translating data into the format the application layer specifies. It is to say, it acts as the network’s data translator to ensure that the data sent out by the application layer is readable by the receiving system’s application layer.
+
+This OSI model layer communicates and interacts with: the application layer and the session layer.
+
+The most common security attack on the presentation layer is: a phishing attack. 
+
+Phishing attacks are the practice of sending fraudulent messages that appear to come from a trusted source. It is usually performed through email. The goal is to steal sensitive data like credit card and login information or install malware on the victim’s machine. Phishing is a common type of cyber-attack that everyone should learn about in order to protect themselves.
+
+Attack vectors: SSL hijacking, encryption downgrade attacks, decryption attacks, encoding attacks, DDoS attacks
+
+
+Mitigation: offload the SSL from the origin infrastructure and inspecting the application traffic for signs of attack traffic or violations of policy at an applications delivery platform (ADP). A good ADP will also ensure that your traffic is then re-encrypted and forwarded back to the origin infrastructure.
+
+
 ## Session Layer
 ### What is Session Layer 
 The session layer is the fifth layer of the OSI (Open Systems Interconnection) model. Its primary function is to establish, manage, and terminate communication sessions between two network devices. The session layer ensures reliable and orderly data exchange by providing mechanisms for session establishment, maintenance, synchronization, and recovery in case of failures.
