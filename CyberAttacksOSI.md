@@ -186,3 +186,33 @@ The data link layer, which is the second layer of the OSI (Open Systems Intercon
 Mitigating these attacks on the data link layer involves implementing security measures such as **MAC address filtering**, **VLAN segmentation**, **proper ARP configuration**, and **network monitoring to detect and prevent unauthorized activities**. Employing **secure switch configurations**, enabling **port security features**, and regularly updating network devices can also help protect against data link layer attacks.
 
 > Attacks on the network layer can have significant consequences for network security, compromising the integrity, availability, and confidentiality of network communications. For example, IP spoofing attacks can deceive network devices and bypass security controls, leading to unauthorized access or the manipulation of data. Denial-of-Service (DoS) and Distributed Denial-of-Service (DDoS) attacks at the network layer can overwhelm network resources, causing service disruptions, rendering systems inaccessible, or even resulting in complete network outages. Routing attacks can manipulate routing tables or routing protocols, leading to misdirected or intercepted network traffic, potentially exposing sensitive information or allowing unauthorized access to network resources.
+
+## Physical Layer
+### What is Physical Layer
+The physical layer, which is the first layer of the OSI (Open Systems Interconnection) model, is responsible for transmitting raw bitstream dataover a physical medium. It deals with the physical characteristics of the network, including the electrical, mechanical, and procedural aspects of data transmission. The physical layer specifies the physical media types(such as copper, fiber optic, or wireless), the encoding and modulation techniques used to represent data as electrical or optical signals, and the transmission rates and distances supported by the media. It ensures that data is transmitted reliably and accurately across the network by addressing issues such as signal attenuation, interference, and noise. The physical layer does not concern itself with the content or meaning of the data being transmitted; its primary focus is on the transmission of bits from one point to another. In summary, the physical layer establishes and maintains the physical connectivity between network devices, enabling the transmission of raw data signals over the network.
+
+#### Attacks at the Physical layer can compromise network security and affect the overall system in several ways -
+<details>
+<summary>Wiretapping</summary>
+<p>Attackers gain unauthorized access to the physical network infrastructure, such as cables or transmission lines, to intercept and eavesdrop on the transmitted data. By tapping into the communication medium, they can capture sensitive information or gain insight into network activities.</p>
+</details>
+<details>
+<summary>Jamming</summary>
+<p>This attack involves intentionally disrupting the physical transmission medium by introducing strong interfering signals or electromagnetic interference. By flooding the channel with noise, attackers can disrupt or degrade the quality of data transmission, leading to communication failures.</p>
+</details>
+<details>
+<summary>Physical Destruction</summary>
+<p>Attackers may physically damage or destroy network equipment, cables, or infrastructure components. This can be done to sabotage network operations, cause service disruptions, or render the network inoperable.</p>
+</details>
+<details>
+<summary>Fiber Tapping</summary>
+<p>In networks that utilize fiber optic cables, attackers can tap into the optical fiber to intercept and extract transmitted data. This requires specialized equipment and knowledge of fiber optic technology.</p>
+</details>
+<details>
+<summary>Hardware Manipulation</summary>
+<p>Attackers can tamper with network devices, such as routers, switches, or network interface cards, at the physical layer. By modifying or replacing hardware components, they can gain unauthorized access, alter network configurations, or intercept data.</p>
+</details>
+
+#### Mitigation Strategies
+Mitigating attacks on the physical layer of the OSI model requires implementing several security measures to safeguard the network infrastructure. Physical security measures play a crucial role in protecting network equipment and infrastructure. **Restricted access to network rooms**, the use of surveillance systems, and physical barriers or locks are vital for preventing unauthorized physical access. Additionally, environmental controls, such as temperature and humidity monitoring, are important to prevent damage or malfunction. *Protecting network cables* is crucial, and the use of secure conduits, cable trays, and protective casings can help deter tampering and unauthorized tapping. **Employing tamper-evident seals** on network equipment helps detect any attempts at physical tampering. *Implementing redundancy and backup* systems for critical components ensures high availability and resilience agains physical disruptions or hardware failures. **Monitoring and surveillance systems** assist in detecting and responding to any unauthorized access or suspicious activities. *Training and awareness programs* educate employees about physical security measures and promote a culture of security. By integrating these measures, organizations can enhance the security of the physical layer, protecting the integrity and availability of the network infrastructure.
+> Attacks on the physical layer of a network can have severe consequences and compromise network security in various ways. Since the physical layer forms the foundation of network communication, compromising it can undermine the integrity, confidentiality, and availability of data. For example, wiretapping attacks that intercept data transmission at the physical layer can result in unauthorized access to sensitive information and expose confidential data. Physical layer attacks, such as jamming or disrupting the transmission medium, can cause network outages and disrupt critical services, leading to a loss of availability. Furthermore, attacks involving the physical destruction of network equipment or tampering with hardware can result in service disruptions, unauthorized access, or the insertion of malicious components into the network infrastructure. By compromising the physical layer, attackers can gain unauthorized access, intercept or manipulate data, disrupt network services, or even create a backdoor for further attacks at higher layers. Protecting the physical layer through physical security measures, monitoring systems, and strict access controls is vital to prevent such attacks and maintain the overall security of the network.
