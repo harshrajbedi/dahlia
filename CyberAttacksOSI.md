@@ -149,3 +149,40 @@ Attacks at the Transport layer can compromise network security and affect the ov
 Mitigating attacks on the transport layer of the OSI model requires implementing various security measures to protect the reliable transmission of data between network hosts. One key strategy is to *implement secure transport protocols* such as Transport Layer Security (TLS) or Secure Socket Layer (SSL). These protocols encrypt data during transmission, ensuring confidentiality and integrity, and protect against attacks that aim to intercept or tamper with data in transit. It is crucial to keep the transport layer protocols and their implementations up to date with the latest security patches to address known vulnerabilities. *Implementing proper network segmentation and access controls* helps prevent unauthorized access to network resources and protects against attacks that target the transport layer. Intrusion detection and prevention systems (IDPS) can monitor network traffic, detect suspicious activities, and block potential attacks at the transport layer. Additionally, *implementing strong authentication mechanisms and access controls* helps ensure that only authorized hosts can establish connections and access network resources.
 
 > Attacks on the transport layer can have severe implications for network security, compromising the confidentiality, integrity, and availability of data and services. For example, TCP SYN flooding attacks can overwhelm a system's resources, leading to denial-of-service (DoS) conditions and rendering services inaccessible to legitimate users. Session hijacking attacks targeting the transport layer can enable unauthorized access, data tampering, or the impersonation of legitimate communication parties, potentially leading to unauthorized disclosure of sensitive information or unauthorized actions. Manipulating or disrupting transport layer protocols, such as TCP or UDP, can result in the disruption of network communication, loss of data, or the injection of malicious payloads into network streams.
+
+## Data Link Layer
+### What is Data Link Layer 
+The data link layer, which is the second layer of the OSI (Open Systems Interconnection) model, is responsible for the reliable transfer of data between directly connected nodes on a network. It takes the packets from the network layer and encapsulates them into frames for transmission over the physical medium. The data link layer ensures error-free and orderly data transmission through mechanisms such as error detection, flow control, and media access control. It also handles addressing at the local network level, using MAC (Media Access Control) addresses to uniquely identify devices on the same network segment. The data link layer operates by interacting with the physical layer below it to transmit and receive frames reliably across the network. In summary, the data link layer provides a reliable and efficient means of transferring data between directly connected devices on a local network.
+
+#### Attacks at the Data Link layer can compromise network security and affect the overall system in several ways - 
+
+<details>
+           <summary>MAC Spoofing</summary>
+           <p>Attackers may attempt to spoof or forge Media Access Control (MAC) addresses to impersonate legitimate devices on the network. By using a false MAC address, they can bypass network access controls and gain unauthorized access to the network.</p>
+</details>
+
+<details>
+           <summary>ARP Spoofing/ARP Poisoning</summary>
+           <p>Address Resolution Protocol (ARP) spoofing involves manipulating ARP messages to associate an attacker's MAC address with the IP address of a legitimate device on the network. This allows the attacker to intercept or redirect network traffic intended for the targeted device, potentially leading to eavesdropping or data manipulation.</p>
+</details>
+
+<details>
+           <summary>VLAN Hopping</summary>
+           <p>Virtual Local Area Network (VLAN) hopping attacks exploit vulnerabilities in switch configurations to gain unauthorized access to different VLANs. By manipulating VLAN tags or misconfiguring switch port settings, attackers can bypass network segmentation and access sensitive data on other VLANs.</p>
+         </details>
+  
+<details>
+           <summary>MAC Flooding</summary>
+           <p>MAC flooding attacks flood a switch's MAC address table by sending a large volume of forged MAC addresses to the switch. This can lead to the switch entering "fail-open" mode, where it operates like a hub, broadcasting traffic to all connected devices. This allows attackers to capture network traffic and potentially perform unauthorized actions.</p>
+         </details>
+
+<details>
+           <summary>Spanning Tree Protocol (STP) Manipulation</summary>
+           <p>By exploiting weaknesses in the Spanning Tree Protocol, attackers can manipulate the network topology to create loops or force network traffic to pass through their devices. This can disrupt network operations, cause network congestion, or facilitate eavesdropping.</p>
+         </details>
+
+#### Mitigation Strategies
+
+Mitigating these attacks on the data link layer involves implementing security measures such as **MAC address filtering**, **VLAN segmentation**, **proper ARP configuration**, and **network monitoring to detect and prevent unauthorized activities**. Employing **secure switch configurations**, enabling **port security features**, and regularly updating network devices can also help protect against data link layer attacks.
+
+> Attacks on the network layer can have significant consequences for network security, compromising the integrity, availability, and confidentiality of network communications. For example, IP spoofing attacks can deceive network devices and bypass security controls, leading to unauthorized access or the manipulation of data. Denial-of-Service (DoS) and Distributed Denial-of-Service (DDoS) attacks at the network layer can overwhelm network resources, causing service disruptions, rendering systems inaccessible, or even resulting in complete network outages. Routing attacks can manipulate routing tables or routing protocols, leading to misdirected or intercepted network traffic, potentially exposing sensitive information or allowing unauthorized access to network resources.
