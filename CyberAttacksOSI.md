@@ -111,3 +111,35 @@ Attacks at the Session layer can compromise network security and affect the over
 Mitigating attacks on the session layer of the OSI model involves implementing various security measures to protect session establishment, maintenance, and termination processes. One key mitigation strategy is to implement **strong authentication mechanisms**, such as multi-factor authentication, to ensure secure session establishment. By verifying the identity of users or devices, the risk of unauthorized session initiation is minimized. **Employing encryption protocols**, such as SSL/TLS, helps protect session data during transmission, ensuring confidentiality and integrity. Regularly monitoring session activity and implementing session timeouts can help mitigate the risk of session hijacking or unauthorized access. **Implementing robust session management controls**, including secure session identifiers and strong session key generation algorithms, adds an additional layer of protection. It is also important to conduct regular security assessments to identify vulnerabilities and promptly apply patches or updates to session management software.
 
 > While attacks directly targeting the session layer are less common, compromising the session layer can have significant implications for network security. Attacks such as session hijacking or man-in-the-middle attacks can result in unauthorized access to sensitive information or allow attackers to masquerade as legitimate users, compromising the integrity and confidentiality of network communications. By gaining control over sessions, attackers can bypass authentication mechanisms, perform unauthorized actions, or manipulate session parameters. Session layer attacks can also disrupt the establishment, maintenance, or termination of sessions, leading to service disruptions or denial of service. Additionally, exploiting vulnerabilities in session management can undermine the trust and reliability of the network, eroding user confidence and potentially leading to further security breaches in higher layers of the network stack.
+
+## Transport Layer
+### What is Transport Layer 
+The Transport Layer is the fourth layer in the OSI (Open Systems Interconnection) model, responsible for reliable end-to-end communication between devices across a network. This layer ensures the delivery of data packets and provides error recovery, flow control, and congestion control mechanisms. The Transport Layer establishes and manages connections between devices, ensuring reliable data delivery. It segments and reassembles data into manageable units for transmission and handles end-to-end flow control. The primary protocols at this layer include TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).
+
+Attacks at the Transport layer can compromise network security and affect the overall system in several ways - 
+
+<details>
+           <summary>TCP SYN Flooding</summary>
+           <p>This type of attack exploits the TCP three-way handshake process by sending a flood of SYN (synchronization) packets to overwhelm the target system's resources. The goal is to exhaust the system's ability to establish new connections, resulting in a denial-of-service (DoS) condition.</p>
+</details>
+
+<details>
+           <summary>TCP Session Hijacking</summary>
+           <p>In a session hijacking attack, an attacker intercepts and takes control of an existing TCP session between two hosts. By eavesdropping on the session or successfully predicting the sequence numbers, the attacker can impersonate one of the communicating parties, gain unauthorized access, or manipulate the transmitted data.</p>
+</details>
+
+<details>
+           <summary>TCP Reset Attack</summary>
+           <p>Also known as a TCP RST attack, this involves sending spoofed TCP reset packets to abruptly terminate an established TCP connection. This can disrupt communication between hosts, leading to service disruptions or session terminations.</p>
+         </details>
+  
+<details>
+           <summary>UDP Flood</summary>
+           <p>In a UDP flood attack, the attacker floods the target system with a large volume of UDP packets. Since UDP is connectionless and does not have the same level of error checking as TCP, the goal is to overwhelm the target system's network resources and cause a DoS condition.</p>
+         </details>
+
+<details>
+           <summary>Transport Layer Security (TLS)/Secure Sockets Layer (SSL) Attacks</summary>
+           <p>These attacks exploit vulnerabilities in the TLS/SSL protocols used for secure communication. Examples include protocol downgrade attacks, where attackers force the use of weaker encryption protocols or cryptographic vulnerabilities, or exploiting implementation flaws in SSL/TLS libraries.</p>
+         </details>
+        
