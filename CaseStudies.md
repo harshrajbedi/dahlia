@@ -22,6 +22,66 @@ Here are some key details of the attack:
 ### Attack Timeline
 
 The attack timeline of Stuxnet provides a chronological sequence of events from its initial infection to its impact and discovery. Here is a general timeline of the Stuxnet attack:
+Attack Timeline:
+Indirect prompt-injection attacks can leave people vulnerable
+to scams and data theft when they use the AI chatbots.
+July 15, 2010
+First heard about Stuxnet.
+August 26, 2010
+Obtained copy of Stuxnet from the Internet and started lab analysis.
+September 8, 2010
+Informed key people in the control system security community that Stuxnet is a
+cyber warfare weapon.
+September 13, 2010
+Published that Stuxnet is a 100% directed attack.
+September 14, 2010
+Published a step-by-step guide how to analyze Stuxnet in a lab environment, along
+with lab configuration details and video capture of Stuxnet traffic in Wireshark.
+September 16, 2010
+Published first details on controller code injection, including the DEADF007 string
+Published information on data blocks 890 and 8063.
+Published that Stuxnet’s target appears to be the Iranian nuclear program,
+especially the Bushehr nuclear power plant
+September 17, 2010
+Published an advisory that the control system vulnerabilities exploited by Stuxnet
+cannot be patched.
+Published recommended mitigation strategies for asset owners, vendors, and
+security companies to address the threat of Stuxnet-inspired malware
+September 19, 2010
+Informed DHS & INL about the threat posed by Stuxnet-inspired malware
+Informed a US congressperson about the threat posed by Stuxnet-inspired
+malware.
+September 21, 2010
+Technical briefing on Stuxnet by Ralph for the control system security community
+at WeissCon in Rockville, MD, especially focusing on how to address the threat of
+Stuxnet-inspired malware.
+September 26, 2010
+In an interview with German nationwide TV (“Die Tagesschau”), Ralph says that
+potential targets for Stuxnet are the Bushehr NPP, the uranium enrichment facilities
+in Natanz, or both
+October 11, 2010
+Open letter to Symantec addressing their ill-informed assessment of the threat
+posed by Stuxnet-inspired malware, pointing out in detail why Stuxnet can be
+copied easily, and can be re-used by follow-up attackers without insider knowledge
+November 13, 2010
+Confirmed Symantec’s discovery that the 315 attack code manipulates a 6 x 31 drive
+array, eight hours after published by Symantec.
+Identified the K-1000-60/3000-3 steam turbine in the Bushehr NPP as the potential
+target for the 417 attack code.
+November 14, 2010
+Published intelligence on attacker profiling, pointing out that a coalition of nation
+states appears to be behind Stuxnet, limiting the circle of suspects to Israel, USA,
+Germany, Russia.
+November 15, 2010
+Published possible ways to destroy gas centrifuges with the 315 attack code, some of
+which are later supported by ISIS’ centrifuge expert David Albright.
+Published that the 417 attack code does a man-in-the-middle on the controller,
+feeding fake input data to the legitimate controller program.
+November 19, 2010
+Published that the preparation for operation Myrtus must have taken several years.
+December 6, 2010
+Announced mitigation tool for Stuxnet-inspired malware: The Langner Controller
+Integrity Checker.
 
 **2008-2009:**
 Stuxnet's development is believed to have started during this period, with the involvement of sophisticated state-sponsored actors.
