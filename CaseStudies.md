@@ -91,4 +91,14 @@ In conclusion, the Stuxnet case represents a significant milestone in the field 
 ### Background and Context
 
 The Heartbleed case study revolves around one of the most significant security vulnerabilities discovered in recent years. Heartbleed refers to a critical flaw found in the OpenSSL cryptographic software library, which is widely used to secure communications on the Internet. The vulnerability was first reported in April 2014 by a team of researchers from Google and Codenomicon. It affected the widely deployed OpenSSL versions 1.0.1 through 1.0.1f.
+
+
+### Attack Overview
+
+The vulnerability allowed attackers to exploit a flaw in the implementation of the TLS Heartbeat Extension and retrieve sensitive information from the memory of affected servers.
+1. In a Heartbleed attack, an attacker sent a specially crafted malicious heartbeat request to a vulnerable server. The server, if susceptible, would respond with a heartbeat response, including a payload of data. However, due to the flaw, the server did not properly validate the payload size, allowing the attacker to request more data than was actually sent.
+2. By exploiting this buffer over-read vulnerability, attackers could access random data from the server's memory, potentially exposing sensitive information.
+3. This included usernames, passwords, session cookies, private keys, and other confidential data.
+4. Attackers could exploit Heartbleed without leaving any traces, making it difficult to detect the intrusion.
+
 Heartbleed exploited a flaw in the implementation of the Transport Layer Security (TLS) Heartbeat Extension, allowing an attacker to retrieve sensitive information, including usernames, passwords, and private encryption keys, from the memory of affected servers. The flaw was particularly alarming because it went undetected for over two years, leaving a vast number of websites, online services, and devices vulnerable.
