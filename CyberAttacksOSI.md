@@ -150,6 +150,46 @@ Mitigating attacks on the transport layer of the OSI model requires implementing
 
 > Attacks on the transport layer can have severe implications for network security, compromising the confidentiality, integrity, and availability of data and services. For example, TCP SYN flooding attacks can overwhelm a system's resources, leading to denial-of-service (DoS) conditions and rendering services inaccessible to legitimate users. Session hijacking attacks targeting the transport layer can enable unauthorized access, data tampering, or the impersonation of legitimate communication parties, potentially leading to unauthorized disclosure of sensitive information or unauthorized actions. Manipulating or disrupting transport layer protocols, such as TCP or UDP, can result in the disruption of network communication, loss of data, or the injection of malicious payloads into network streams.
 
+## Network Layer
+### What is Network Layer 
+The network layer, which is the third layer of the OSI (Open Systems Interconnection) model, is responsible for facilitating network-wide communication and managing the routing of data packets between different networks. It establishes logical connections, selects the optimal path for data transmission, and ensures that packets are delivered reliably from the source to the destination. The network layer accomplishes this by assigning logical addresses to devices (such as IP addresses), encapsulating data into packets, and determining the best path for packet delivery based on network conditions and routing protocols. It abstracts the underlying physical network infrastructure, enabling interoperability and connectivity across different networks. In summary, the network layer plays a critical role in enabling end-to-end communication and efficient data routing in a networked environment.
+
+Attacks at the Network layer can compromise network security and affect the overall system in several ways - 
+
+<details>
+           <summary>IP Spoofing</summary>
+           <p>Attackers may forge or spoof IP addresses to disguise their identity or impersonate legitimate devices. By using false source IP addresses, they can deceive network devices, bypass security controls, or launch other attacks while obscuring their true origin.</p>
+</details>
+
+<details>
+           <summary>Smurf Attack</summary>
+           <p>This type of attack leverages Internet Control Message Protocol (ICMP) broadcast messages to launch a large-scale DDoS attack. Attackers spoof the source IP address and send ICMP echo request (ping) messages to a network's broadcast address, causing all hosts to respond to the victim's IP address, flooding it with traffic.</p>
+</details>
+
+<details>
+           <summary>ICMP Flood</summary>
+           <p>Attackers flood a target network or host with ICMP packets, overwhelming its resources and causing service degradation or disruption. This attack is particularly effective against devices with limited processing power or insufficient bandwidth.</p>
+         </details>
+  
+<details>
+           <summary>Fragmentation Attacks</summary>
+           <p>Attackers exploit weaknesses in the handling of fragmented IP packets to disrupt network devices or evade security controls. This can involve overwhelming a target system by sending a large number of fragmented packets or using fragmentation techniques to hide malicious payloads.</p>
+         </details>
+
+<details>
+           <summary>Routing Attacks</summary>
+           <p>These attacks target routing protocols or routing tables to manipulate the flow of network traffic. Examples include route poisoning, where false or malicious routing information is propagated, or route flapping, which causes instability and disruption in routing tables.</p>
+         </details>
+         
+#### Mitigation Strategies
+
+Mitigating attacks on the network layer of the OSI model requires implementing various security measures to protect the routing, logical addressing, and overall network infrastructure. One crucial strategy is to enforce **strong access control mechanisms**, such as firewalls and properly configured access control lists (ACLs). These mechanisms restrict unauthorized access to the network, preventing attackers from exploiting vulnerabilities at the network layer. **Implementing network segmentation** using techniques like virtual LANs (VLANs) or subnets helps isolate different parts of the network, limiting the impact of a potential security breach to specific segments and reducing the overall attack surface. Additionally, ensuring the **security of routing protocols** is crucial by configuring them with authentication mechanisms and utilizing encryption where applicable. Regularly reviewing and updating routing tables helps detect and mitigate any unauthorized or incorrect routes, maintaining the integrity of the network. Implementing **network monitoring tools and intrusion detection systems** (IDS) provides real-time visibility into network traffic, enabling the detection and response to potential network layer attacks.
+
+> Attacks on the network layer can have significant consequences for network security, compromising the integrity, availability, and confidentiality of network communications. For example, IP spoofing attacks can deceive network devices and bypass security controls, leading to unauthorized access or the manipulation of data. Denial-of-Service (DoS) and Distributed Denial-of-Service (DDoS) attacks at the network layer can overwhelm network resources, causing service disruptions, rendering systems inaccessible, or even resulting in complete network outages. Routing attacks can manipulate routing tables or routing protocols, leading to misdirected or intercepted network traffic, potentially exposing sensitive information or allowing unauthorized access to network resources.
+
+## Data Link Layer
+### What is Data Link Layer 
+The data link layer, which is the second layer of the OSI (Open Systems Interconnection) model, is responsible for the reliable transfer of data between directly connected nodes on a network. It takes the packets from the network layer and encapsulates them into frames for transmission over the physical medium. The data link layer ensures error-free and orderly data transmission through mechanisms such as error detection, flow control, and media access control. It also handles addressing at the local network level, using MAC (Media Access Control) addresses to uniquely identify devices on the same network segment. The data link layer operates by interacting with the physical layer below it to transmit and receive frames reliably across the network. In summary, the data link layer provides a reliable and efficient means of transferring data between directly connected devices on a local network.
 ## Data Link Layer
 ### What is Data Link Layer 
 The data link layer, which is the second layer of the OSI (Open Systems Interconnection) model, is responsible for the reliable transfer of data between directly connected nodes on a network. It takes the packets from the network layer and encapsulates them into frames for transmission over the physical medium. The data link layer ensures error-free and orderly data transmission through mechanisms such as error detection, flow control, and media access control. It also handles addressing at the local network level, using MAC (Media Access Control) addresses to uniquely identify devices on the same network segment. The data link layer operates by interacting with the physical layer below it to transmit and receive frames reliably across the network. In summary, the data link layer provides a reliable and efficient means of transferring data between directly connected devices on a local network.
