@@ -107,7 +107,7 @@ It targated OSI layers from Application to Transport. The vulnerability allowed 
 **March 21, 2012**: OpenSSL version 1.0.1 is released, including the vulnerable Heartbeat Extension.
 **March-April 2014**: A team of researchers from Google and Codenomicon independently discover the Heartbleed vulnerability.
 **April 1, 2014**: The researchers report the vulnerability to the OpenSSL team and CERT/CC (Computer Emergency Response Team Coordination Center).
-**April 7, 2014**: The OpenSSL Security Advisory is issued, acknowledging the Heartbleed vulnerability (CVE-2014-0160). The advisory warns about the potential impact on confidentiality and encourages organizations to upgrade to the fixed versions.
+**April 7, 2014**: The OpenSSL Security Advisory is issued, acknowledging the Heartbleed vulnerability (CVE-2014-0160). The advisory warns about the potential impact on confidentiality and encourages organizations to upgrade to fixed versions.
 **April 7, 2014**: The National Vulnerability Database (NVD) publishes the vulnerability, increasing public awareness.
 **April 8, 2014**: News about the Heartbleed vulnerability spreads rapidly, generating significant media attention and concern within the cybersecurity community.
 **April 9, 2014**: Major technology companies, including Google and Facebook, begin to address the vulnerability by patching their systems and revoking compromised certificates.
