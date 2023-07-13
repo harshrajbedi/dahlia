@@ -90,8 +90,8 @@ In conclusion, the Stuxnet case represents a significant milestone in the field 
 
 ### Background and Context
 
-The Heartbleed case study revolves around one of the most significant security vulnerabilities discovered in recent years. Heartbleed refers to a critical flaw found in the OpenSSL cryptographic software library, which is widely used to secure communications on the Internet. The vulnerability was first reported in April 2014 by a team of researchers from Google and Codenomicon. It affected the widely deployed OpenSSL versions 1.0.1 through 1.0.1f.
-Heartbleed exploited a flaw in the implementation of the Transport Layer Security (TLS) Heartbeat Extension, allowing an attacker to retrieve sensitive information, including usernames, passwords, and private encryption keys, from the memory of affected servers. The flaw was particularly alarming because it went undetected for over two years, leaving a vast number of websites, online services, and devices vulnerable.
+Heartbleed was a major cybersecurity vulnerability discovered in April 2014 by researchers from Codenomicon and Google Security. This particular vulnerability affected the widely used OpenSSL cryptographic software library, which is responsible for providing secure communication over computer networks. The significance of Heartbleed stemmed from its potential to expose sensitive information, such as usernames, passwords, and private encryption keys, to attackers.
+Unlike typical malware or worms, Heartbleed was not a deliberate attack, but rather a flaw in the implementation of the OpenSSL protocol. The vulnerability resided in the "heartbeat" extension, a feature that allowed the establishment of a secure connection between a client and a server. However, an error in the code enabled an attacker to send a maliciously crafted "heartbeat" request to a vulnerable server and trick it into disclosing chunks of its memory. This flaw essentially allowed unauthorized access to sensitive information without leaving any trace of intrusion.
 
 ### Attack Overview
 
